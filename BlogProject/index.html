@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SethBlogs</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>SethBlogs</h2>
+        <ul>
+            <li><a href="#" style="text-decoration: none;">Leetcode</a></li>
+            <li><a href="#">Javascript</a></li>
+            <li><a href="#">React</a></li>
+        </ul>
+    </div>
+    <div class="main" id="main">
+        <div class="main-header">
+            <h1>Featured Blogs</h1>
+            <button type="submit" class="btn" id="newPostBtn">New Blog</button>
+        </div>
+        <div class="blogContainer"></div>
+    </div>
+
+    <div id="newPost" style="display: none;">
+        <h1>Create New Post</h1>
+        <form id="newPostForm">
+          <label for="title">Title:</label>
+          <input type="text" id="title" name="title" required />
+          <label for="content">Content:</label>
+          <textarea id="content" name="content" required></textarea>
+          <button type="submit">Save</button>
+        </form>
+      </div>
+</body>
+<script src="script.js"></script>
+</html>
